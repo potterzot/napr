@@ -1,0 +1,10 @@
+##napr
+
+A collection of functions and other tidbits of R code. Easy to install:
+
+    library(devtools)
+    install_github("http://github.com/potterzot/napr")
+
+
+
+

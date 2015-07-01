@@ -1,12 +1,17 @@
-#' ghelp, look for function use in github source
+#' Look for function use in github source.
+#'
+#' Search github source for topics to find examples
+#' of use of the topic. Based on:
+#' https://gist.github.com/hrbrmstr/32e9c140129d7d51db52.
 #'
 #' @export
-#' @param topic, string topic to search for
-#' @return html to search for
+#' @param topic, string topic to search for.
+#' @param in_cran, whether the cran limiter should be applied. Default TRUE.
+#' @return html object containing source code with the topic.
 #' @importFrom htmltools HTML
 #' @importFrom rvest html_node html_nodes
 #' @importFrom XML htmlParse
-ghelp <- function(topic, in_cran=TRUE) {
+githelp <- function(topic, in_cran=TRUE) {
 
   # github search URL base
   base_ext_url <- "https://github.com/search?utf8=%%E2%%9C%%93&q=%s+extension%%3AR"
@@ -19,7 +24,6 @@ ghelp <- function(topic, in_cran=TRUE) {
   # accommodate those of us who are on the bleeding edge of the hadleyverse
   # either way, we are just extracting out the results <div> for viewing in
   # the viewer pane (it works in plain ol' R, too)
-  print(ext_url)
   pg <- html(ext_url)
   res_div <- paste(capture.output(html_node(pg, "div#code_search_results")), collapse="")
 
