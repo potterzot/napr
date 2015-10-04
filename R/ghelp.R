@@ -5,6 +5,7 @@
 #' https://gist.github.com/hrbrmstr/32e9c140129d7d51db52.
 #'
 #' @export
+#'
 #' @param topic, string topic to search for.
 #' @param in_cran, whether the cran limiter should be applied. Default TRUE.
 #' @return html object containing source code with the topic.

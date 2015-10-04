@@ -4,8 +4,9 @@ Version: 0.0.0.9000
 Authors@R: person("Nicholas", "Potter", email = "pottr.nicholas@gmail.com", role = c("aut", "cre"))
 Description: Useful functions collected over the years...
 Depends: R (>= 3.2.0)
-Imports: htmltools,
-         rvest (>= 0.2.0.0),
-         XML
-License: file LICENSE
+Suggests: fastmatch,
+        htmltools,
+        rvest (>= 0.2.0.0),
+        XML
+License: MIT + file LICENSE
 LazyData: true
