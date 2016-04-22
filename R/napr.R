@@ -35,7 +35,7 @@ is.leapYear <- function(yr) {
 }
 
 #' Rounds to arbitrary number.
-#' 
+#'
 #' @export
 #' @param n number to round.
 #' @param r value to round to.
@@ -49,7 +49,9 @@ round_any <- function(n, r) round(n/r)*r
 #'
 #' @importFrom fastmatch fmatch
 #' @export
-#' @param 
+#' @param x a value.
+#' @param table the lookup table.
+#' @return a logical.
 `%fin%` <- function(x, table) {
   if (!requireNamespace("fastmatch", quietly = TRUE)) {
     stop("Please install fastmatch.", call. = FALSE)

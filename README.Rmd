@@ -1,3 +1,6 @@
+---
+output: pdf_document
+---
 ##napr
 
 A collection of functions and other tidbits of R code. Easy to install:
