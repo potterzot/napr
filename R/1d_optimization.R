@@ -50,8 +50,3 @@ f.gold = function(f, lo, hi, tol=0.0000001) {
   }
   c(a,fa)
 }
-  
-  
-  
-  
-}

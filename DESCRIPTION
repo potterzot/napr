@@ -5,14 +5,14 @@ Authors@R: person("Nicholas", "Potter", email = "pottr.nicholas@gmail.com", role
 Description: Useful functions collected over the years...
 Depends: R (>= 3.2.0)
 Imports:
-  jsonlite
-  RCurl
+  jsonlite,
+  RCurl,
   stringr
 Suggests: 
   fastmatch,
   here,
   htmltools,
-  rvest (>= 0.2.0.0),
+  rvest (>= 0.2.0),
   XML
 License: MIT + file LICENSE
 LazyData: true
